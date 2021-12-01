@@ -12,7 +12,7 @@ def after_request(response):
     response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
     return response
 
-@app.route('/covid',methods=["GET"])
+@app.route('',methods=["GET"])
 def get_corona():
     url = "https://www.mohfw.gov.in/"
     htmo_deta=get_html_deta(url)
